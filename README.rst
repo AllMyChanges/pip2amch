@@ -49,7 +49,7 @@ pip2amch
     :alt: Scrutinizer Status
     :target: https://scrutinizer-ci.com/g/svetlyak40wt/pip2amch/
 
-Command to transform pip's requirements.txt into a csv for batch upload to https://allmych
+Command to transform pip's requirements.txt into a csv for batch upload to https://allmychanges.com.
 
 * Free software: BSD license
 

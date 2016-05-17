@@ -40,5 +40,5 @@ html_sidebars = {
 }
 html_short_title = '%s-%s' % (project, version)
 html_theme_options = {
-    'githuburl': 'https://github.com/svetlyak40wt/pip2amch/'
+    'githuburl': 'https://github.com/allmychanges/pip2amch/'
 }

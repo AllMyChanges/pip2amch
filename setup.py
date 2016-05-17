@@ -3,13 +3,11 @@
 from __future__ import absolute_import, print_function
 
 import io
-import os
 import re
 from glob import glob
 from os.path import basename
 from os.path import dirname
 from os.path import join
-from os.path import relpath
 from os.path import splitext
 
 from setuptools import find_packages
@@ -45,11 +43,11 @@ setup(
     name='pip2amch',
     version='0.1.0',
     license='BSD',
-    description="Command to transform pip's requirements.txt into a csv for batch upload to https://allmych",
+    description="Command to transform pip's requirements.txt into a csv for batch upload to https://allmychanges.com",
     long_description=remove_rst_roles(expand_includes(read('README.rst'))),
     author='Alexander Artemenko',
     author_email='svetlyak.40wt@gmail.com',
-    url='https://github.com/svetlyak40wt/pip2amch',
+    url='https://github.com/allmychanges/pip2amch',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -57,9 +55,10 @@ setup(
     zip_safe=False,
     classifiers=[
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
+        'Environment :: Console',
         'Operating System :: Unix',
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
@@ -74,14 +73,18 @@ setup(
         'Topic :: Utilities',
     ],
     keywords=[
-        # eg: 'keyword1', 'keyword2', 'keyword3',
+        'allmychanges',
+        'release notes',
+        'amch',
+        'changelog',
+        'pip',
+        'requirements',
     ],
     install_requires=[
-        # eg: 'aspectlib==1.1.1', 'six>=1.7',
+        'click>=6.6,<6.7',
+        'requirements-parser>=0.1,<0.2',
+        'tablib>=0.11,<0.12',
     ],
-    extras_require={
-        # eg: 'rst': ['docutils>=0.11'],
-    },
     entry_points={
         'console_scripts': [
             'pip2amch = pip2amch.__main__:main'
