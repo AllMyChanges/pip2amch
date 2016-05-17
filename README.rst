@@ -50,6 +50,7 @@ pip2amch
     :target: https://scrutinizer-ci.com/g/svetlyak40wt/pip2amch/
 
 Command to transform pip's requirements.txt into a csv for batch upload to https://allmychanges.com.
+It allows to sync your requirements with AllMyChanges and to supbscribe on their updates.
 
 * Free software: BSD license
 
@@ -59,6 +60,19 @@ Installation
 ::
 
     pip install pip2amch
+
+
+Usage
+=====
+
+To use pip2amch in a project::
+
+  pip2amch --tag my-project requirements.txt | amch push
+
+This will push all requirements from the file to the service
+https://allmychanges.com, where you can subscribe on their
+release notes.
+
 
 Documentation
 =============
