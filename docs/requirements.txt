@@ -1,4 +1,4 @@
 sphinx==1.5.3
-sphinxcontrib-napoleon
+sphinxcontrib-napoleon==0.6.1
 sphinx-py3doc-enhanced-theme
 -e .
