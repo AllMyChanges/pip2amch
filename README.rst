@@ -33,15 +33,15 @@ pip2amch
     :alt: PyPI Package monthly downloads
     :target: https://pypi.python.org/pypi/pip2amch
 
-.. |wheel| image:: https://pypip.in/wheel/pip2amch/badge.png?style=flat
+.. |wheel| image:: https://img.shields.io/pypi/wheel/pip2amch.svg?style=flat
     :alt: PyPI Wheel
     :target: https://pypi.python.org/pypi/pip2amch
 
-.. |supported-versions| image:: https://pypip.in/py_versions/pip2amch/badge.png?style=flat
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/pip2amch.svg?style=flat
     :alt: Supported versions
     :target: https://pypi.python.org/pypi/pip2amch
 
-.. |supported-implementations| image:: https://pypip.in/implementation/pip2amch/badge.png?style=flat
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/pip2amch.svg?style=flat
     :alt: Supported imlementations
     :target: https://pypi.python.org/pypi/pip2amch
 
